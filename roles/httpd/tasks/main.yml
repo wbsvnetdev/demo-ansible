@@ -32,6 +32,6 @@
 
 - name: Copy demotreeptik to /var/www/html 
   copy:
-    src: /tmp/demotreeptik
+    src: /tmp/demotreeptik/
     dest: /var/www/html
     remote_src: yes
