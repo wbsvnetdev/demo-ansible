@@ -1,0 +1,21 @@
+---
+- name: Install httpd server
+  yum: 
+    name: httpd 
+    state: present
+
+- name: Enable the service httpd
+  service:
+    name: httpd
+    enabled: yes
+
+- name: Start the service httpd
+  service:
+    name: httpd
+    state: started
+    
+
+- name: Install elinks
+  yum:
+    name: elinks
+    state: present
