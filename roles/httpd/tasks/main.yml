@@ -19,3 +19,18 @@
   yum:
     name: elinks
     state: present
+
+- name: Install git 
+  yum: 
+    name: git
+		state: present
+	
+- name: Cloned the repo DemoTreeptik
+  git:
+    repo: 'https://github.com/wbsvnetdev/DemoTreeptik'
+    dest: /tmp/demotreeptik
+  
+- name: Copy demotreeptik to /var/www/html 
+  copy:
+    src: /tmp/demotreeptik
+    dest: /var/www/html
