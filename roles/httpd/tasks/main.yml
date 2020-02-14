@@ -20,10 +20,10 @@
     name: elinks
     state: present
 
-- name: Install git 
-  yum: 
+- name: Install elinks
+  yum:
     name: git
-		state: present
+    state: present
 
 - name: Cloned the repo DemoTreeptik
   git:
