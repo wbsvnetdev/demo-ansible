@@ -34,3 +34,4 @@
   copy:
     src: /tmp/demotreeptik
     dest: /var/www/html
+    remote_src: yes
